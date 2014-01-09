@@ -30,6 +30,9 @@
 		B343348A187E40260017D7B3 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = B3433487187E40260017D7B3 /* Product.m */; };
 		B343348B187E40260017D7B3 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3433489187E40260017D7B3 /* ProductCell.m */; };
 		B343348E187E48880017D7B3 /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = B343348D187E48880017D7B3 /* Catalog.m */; };
+		B3433491187E61FC0017D7B3 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = B3433490187E61FC0017D7B3 /* Cart.m */; };
+		B3433494187E63FB0017D7B3 /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3433493187E63FB0017D7B3 /* CartItem.m */; };
+		B3433498187E72D40017D7B3 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3433497187E72D40017D7B3 /* CartCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,12 @@
 		B3433489187E40260017D7B3 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		B343348C187E48880017D7B3 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
 		B343348D187E48880017D7B3 /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalog.m; sourceTree = "<group>"; };
+		B343348F187E61FC0017D7B3 /* Cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cart.h; sourceTree = "<group>"; };
+		B3433490187E61FC0017D7B3 /* Cart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cart.m; sourceTree = "<group>"; };
+		B3433492187E63FB0017D7B3 /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItem.h; sourceTree = "<group>"; };
+		B3433493187E63FB0017D7B3 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItem.m; sourceTree = "<group>"; };
+		B3433496187E72D30017D7B3 /* CartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCell.h; sourceTree = "<group>"; };
+		B3433497187E72D40017D7B3 /* CartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +144,12 @@
 		B3433448187E3F3D0017D7B3 /* CatalogMVCTest */ = {
 			isa = PBXGroup;
 			children = (
+				B343348F187E61FC0017D7B3 /* Cart.h */,
+				B3433490187E61FC0017D7B3 /* Cart.m */,
+				B3433492187E63FB0017D7B3 /* CartItem.h */,
+				B3433493187E63FB0017D7B3 /* CartItem.m */,
+				B3433496187E72D30017D7B3 /* CartCell.h */,
+				B3433497187E72D40017D7B3 /* CartCell.m */,
 				B3433485187E40260017D7B3 /* CartDelegate.h */,
 				B343348C187E48880017D7B3 /* Catalog.h */,
 				B343348D187E48880017D7B3 /* Catalog.m */,
@@ -298,11 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3433498187E72D40017D7B3 /* CartCell.m in Sources */,
+				B3433491187E61FC0017D7B3 /* Cart.m in Sources */,
 				B343348B187E40260017D7B3 /* ProductCell.m in Sources */,
 				B3433459187E3F3D0017D7B3 /* ViewController.m in Sources */,
 				B343348A187E40260017D7B3 /* Product.m in Sources */,
 				B3433453187E3F3D0017D7B3 /* AppDelegate.m in Sources */,
 				B343344F187E3F3D0017D7B3 /* main.m in Sources */,
+				B3433494187E63FB0017D7B3 /* CartItem.m in Sources */,
 				B343348E187E48880017D7B3 /* Catalog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +530,7 @@
 				B3433473187E3F3E0017D7B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3433474187E3F3E0017D7B3 /* Build configuration list for PBXNativeTarget "CatalogMVCTestTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +539,7 @@
 				B3433476187E3F3E0017D7B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

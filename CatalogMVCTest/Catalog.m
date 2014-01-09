@@ -34,11 +34,11 @@ static Catalog *_instance;
     
     if (self)
     {
-        data = @[[Product product:@"BaseBall" price:@"100" image:@"Baseball.png"],
-                 [Product product:@"BasketBall" price:@"200" image:@"Basketball.png"],
-                 [Product product:@"FootBall" price:@"250" image:@"Football.png"],
-                 [Product product:@"RugbyBall" price:@"300" image:@"Rugbyball.png"],
-                 [Product product:@"Wilson" price:@"999" image:@"Wilsonball.jpg"]];
+        data = @[[Product product:@"BaseBall" code:@"Ball1" price:@"100" image:@"Baseball.png"],
+                 [Product product:@"BasketBall" code:@"Ball2" price:@"200" image:@"Basketball.png"],
+                 [Product product:@"FootBall" code:@"Ball3" price:@"250" image:@"Football.png"],
+                 [Product product:@"RugbyBall" code:@"Ball4" price:@"300" image:@"Rugbyball.png"],
+                 [Product product:@"Wilson" code:@"Ball5" price:@"999" image:@"Wilsonball.jpg"]];
     }
     
     return self;

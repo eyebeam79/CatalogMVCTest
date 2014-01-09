@@ -13,7 +13,10 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *price;
 @property (strong, nonatomic) NSString *imageName;
+@property (strong, nonatomic) NSString *code;
 
-+ (id)product:(NSString *)name price:(NSString *)price image:(NSString *)image;
++ (id)product:(NSString *)name code:(NSString *)code price:(NSString *)price image:(NSString *)image;
+
+- (BOOL)isEqualProduct:(NSString *)productCode;
 
 @end

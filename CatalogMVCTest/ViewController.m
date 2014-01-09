@@ -11,16 +11,17 @@
 #import "ProductCell.h"
 #import "CartDelegate.h"
 #import "Catalog.h"
+#import "Cart.h"
+#import "CartItem.h"
+#import "CartCell.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, CartDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *table;
-
+@property (strong, nonatomic) Cart *cart;
 @end
 
 @implementation ViewController
-{
-    NSMutableArray *cartItems;
-}
+
 
 // 카탈로그 델리게이트: 제품을 카트에 추가한다.
 - (void)addItem:(id)sender
@@ -29,7 +30,26 @@
     NSIndexPath *indexPath = [self.table indexPathForCell:sender];
     Product *product = [[Catalog defaultCatalog] productAt:indexPath.row];
     
-    [cartItems addObject:product];
+    [self.cart addProduct:product];
+
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
+    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+// 카트내 상품 수량 증가
+- (void)incQuantity:(NSString *)productCode
+{
+    [self.cart incQuantity:productCode];
+    
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
+    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+// 카트내 상품 수량 감소
+- (void)decQuantity:(NSString *)productCode
+{
+    [self.cart decQuantity:productCode];
+    
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
     [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -47,7 +67,7 @@
     }
     else
     {
-        return [cartItems count];
+        return [self.cart.items count];
     }
 }
 
@@ -64,9 +84,10 @@
     }
     else
     {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CART_CELL" forIndexPath:indexPath];
-        Product *product = cartItems[indexPath.row];
-        cell.textLabel.text = product.name;
+        CartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CART_CELL" forIndexPath:indexPath];
+        cell.delegate = self;
+        CartItem *item = self.cart.items[indexPath.row];
+        [cell setCartItem:item];
         
         return cell;
     }
@@ -89,7 +110,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    cartItems = [[NSMutableArray alloc] init];
+    self.cart = [[Cart alloc] init];
+    self.cart.items = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
