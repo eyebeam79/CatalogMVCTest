@@ -14,6 +14,7 @@
 #import "Cart.h"
 #import "CartItem.h"
 #import "CartCell.h"
+#import "ProductDetailViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, CartDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *table;
@@ -103,6 +104,20 @@
     {
         return @"Items in Cart";
     }
+}
+
+// 상품 보기로 전환
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // 제품 상세보기 뷰컨트롤러
+    ProductDetailViewController *detailVC = segue.destinationViewController;
+    
+    NSIndexPath *indexPath = [self.table indexPathForCell:sender];
+    Product *selectedProduct = [[Catalog defaultCatalog] productAt:indexPath.row];
+    
+    // 제품의 코드를 넘겨준다.
+    detailVC.productCode = selectedProduct.code;
+    
 }
 
 - (void)viewDidLoad

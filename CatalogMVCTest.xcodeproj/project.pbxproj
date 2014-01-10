@@ -33,6 +33,9 @@
 		B3433491187E61FC0017D7B3 /* Cart.m in Sources */ = {isa = PBXBuildFile; fileRef = B3433490187E61FC0017D7B3 /* Cart.m */; };
 		B3433494187E63FB0017D7B3 /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B3433493187E63FB0017D7B3 /* CartItem.m */; };
 		B3433498187E72D40017D7B3 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3433497187E72D40017D7B3 /* CartCell.m */; };
+		B35CDA2F187FDBA8000EA6F4 /* add-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B35CDA2D187FDBA8000EA6F4 /* add-button.png */; };
+		B35CDA30187FDBA8000EA6F4 /* delete-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B35CDA2E187FDBA8000EA6F4 /* delete-button.png */; };
+		B35CDA33187FDEE7000EA6F4 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35CDA32187FDEE7000EA6F4 /* ProductDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,10 @@
 		B3433493187E63FB0017D7B3 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItem.m; sourceTree = "<group>"; };
 		B3433496187E72D30017D7B3 /* CartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartCell.h; sourceTree = "<group>"; };
 		B3433497187E72D40017D7B3 /* CartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCell.m; sourceTree = "<group>"; };
+		B35CDA2D187FDBA8000EA6F4 /* add-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-button.png"; path = "Resources/add-button.png"; sourceTree = "<group>"; };
+		B35CDA2E187FDBA8000EA6F4 /* delete-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "delete-button.png"; path = "Resources/delete-button.png"; sourceTree = "<group>"; };
+		B35CDA31187FDEE7000EA6F4 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		B35CDA32187FDEE7000EA6F4 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +171,8 @@
 				B3433458187E3F3D0017D7B3 /* ViewController.m */,
 				B343345A187E3F3D0017D7B3 /* Images.xcassets */,
 				B3433449187E3F3D0017D7B3 /* Supporting Files */,
+				B35CDA31187FDEE7000EA6F4 /* ProductDetailViewController.h */,
+				B35CDA32187FDEE7000EA6F4 /* ProductDetailViewController.m */,
 			);
 			path = CatalogMVCTest;
 			sourceTree = "<group>";
@@ -200,6 +209,8 @@
 		B3433478187E3F8D0017D7B3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B35CDA2D187FDBA8000EA6F4 /* add-button.png */,
+				B35CDA2E187FDBA8000EA6F4 /* delete-button.png */,
 				B3433479187E3F9C0017D7B3 /* Basketball.png */,
 				B343347A187E3F9C0017D7B3 /* Football.png */,
 				B343347B187E3F9C0017D7B3 /* Baseball.png */,
@@ -288,11 +299,13 @@
 			files = (
 				B343345B187E3F3D0017D7B3 /* Images.xcassets in Resources */,
 				B343344D187E3F3D0017D7B3 /* InfoPlist.strings in Resources */,
+				B35CDA30187FDBA8000EA6F4 /* delete-button.png in Resources */,
 				B3433484187E3F9C0017D7B3 /* cart.png in Resources */,
 				B3433482187E3F9C0017D7B3 /* Rugbyball.png in Resources */,
 				B343347F187E3F9C0017D7B3 /* Basketball.png in Resources */,
 				B3433483187E3F9C0017D7B3 /* Wilsonball.jpg in Resources */,
 				B3433456187E3F3D0017D7B3 /* Main.storyboard in Resources */,
+				B35CDA2F187FDBA8000EA6F4 /* add-button.png in Resources */,
 				B3433480187E3F9C0017D7B3 /* Football.png in Resources */,
 				B3433481187E3F9C0017D7B3 /* Baseball.png in Resources */,
 			);
@@ -314,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3433498187E72D40017D7B3 /* CartCell.m in Sources */,
+				B35CDA33187FDEE7000EA6F4 /* ProductDetailViewController.m in Sources */,
 				B3433491187E61FC0017D7B3 /* Cart.m in Sources */,
 				B343348B187E40260017D7B3 /* ProductCell.m in Sources */,
 				B3433459187E3F3D0017D7B3 /* ViewController.m in Sources */,

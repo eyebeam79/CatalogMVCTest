@@ -7,7 +7,7 @@
 //
 
 #import "Catalog.h"
-#import "Product.h"
+
 
 @implementation Catalog
 {
@@ -34,11 +34,11 @@ static Catalog *_instance;
     
     if (self)
     {
-        data = @[[Product product:@"BaseBall" code:@"Ball1" price:@"100" image:@"Baseball.png"],
-                 [Product product:@"BasketBall" code:@"Ball2" price:@"200" image:@"Basketball.png"],
-                 [Product product:@"FootBall" code:@"Ball3" price:@"250" image:@"Football.png"],
-                 [Product product:@"RugbyBall" code:@"Ball4" price:@"300" image:@"Rugbyball.png"],
-                 [Product product:@"Wilson" code:@"Ball5" price:@"999" image:@"Wilsonball.jpg"]];
+        data = @[[Product product:@"BaseBall" code:@"Ball1" price:@"$100" image:@"Baseball.png"],
+                 [Product product:@"BasketBall" code:@"Ball2" price:@"$200" image:@"Basketball.png"],
+                 [Product product:@"FootBall" code:@"Ball3" price:@"$250" image:@"Football.png"],
+                 [Product product:@"RugbyBall" code:@"Ball4" price:@"$300" image:@"Rugbyball.png"],
+                 [Product product:@"Wilson" code:@"Ball5" price:@"$999" image:@"Wilsonball.jpg"]];
     }
     
     return self;
@@ -52,6 +52,19 @@ static Catalog *_instance;
 - (int)numberOfProducts
 {
     return [data count];
+}
+
+- (Product *)productWithCode:(NSString *)ProductCode
+{
+    for (Product *one in data)
+    {
+        if ([one isEqualProduct:ProductCode])
+        {
+            return one;
+        }
+    }
+    
+    return nil;
 }
 
 @end
