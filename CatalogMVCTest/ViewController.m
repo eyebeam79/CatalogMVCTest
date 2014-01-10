@@ -120,6 +120,17 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    // 네비게이션바를 숨긴다.
+    self.navigationController.navigationBarHidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
