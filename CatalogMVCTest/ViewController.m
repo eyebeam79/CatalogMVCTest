@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  CatalogMVCTest
+//  TabBasedCatalogTest
 //
 //  Created by SDT1 on 2014. 1. 9..
 //  Copyright (c) 2014년 SDT1. All rights reserved.
@@ -13,12 +13,13 @@
 #import "Catalog.h"
 #import "Cart.h"
 #import "CartItem.h"
-#import "CartCell.h"
+#import "CartViewController.h"
 #import "ProductDetailViewController.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate, CartDelegate>
+
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, ProductCellDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *table;
-@property (strong, nonatomic) Cart *cart;
+
 @end
 
 @implementation ViewController
@@ -31,79 +32,37 @@
     NSIndexPath *indexPath = [self.table indexPathForCell:sender];
     Product *product = [[Catalog defaultCatalog] productAt:indexPath.row];
     
-    [self.cart addProduct:product];
-
-    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
-    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+    [[Cart defaultCart] addProduct:product];
 }
 
-// 카트내 상품 수량 증가
-- (void)incQuantity:(NSString *)productCode
-{
-    [self.cart incQuantity:productCode];
-    
-    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
-    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
-}
-
-// 카트내 상품 수량 감소
-- (void)decQuantity:(NSString *)productCode
-{
-    [self.cart decQuantity:productCode];
-    
-    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:1];
-    [self.table reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
-}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 0)
-    {
-        return [[Catalog defaultCatalog] numberOfProducts];
-    }
-    else
-    {
-        return [self.cart.items count];
-    }
+
+    return [[Catalog defaultCatalog] numberOfProducts];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0)
-    {
-        ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PRODUCT_CELL" forIndexPath:indexPath];
-        cell.delegate = self;
-        Product *product = [[Catalog defaultCatalog] productAt:indexPath.row];
-        [cell setProductInfo:product];
+
+    ProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PRODUCT_CELL" forIndexPath:indexPath];
+    cell.delegate = self;
+    Product *product = [[Catalog defaultCatalog] productAt:indexPath.row];
+    [cell setProductInfo:product];
         
-        return cell;
-    }
-    else
-    {
-        CartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CART_CELL" forIndexPath:indexPath];
-        cell.delegate = self;
-        CartItem *item = self.cart.items[indexPath.row];
-        [cell setCartItem:item];
-        
-        return cell;
-    }
+    return cell;
+
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    if (section == 0)
-    {
-        return @"Product";
-    }
-    else
-    {
-        return @"Items in Cart";
-    }
+
+    return @"Product";
 }
 
 // 상품 보기로 전환
@@ -120,15 +79,15 @@
     
 }
 
+
 - (void)viewWillAppear:(BOOL)animated
 {
-    // 네비게이션바를 숨긴다.
-    self.navigationController.navigationBarHidden = YES;
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    self.navigationController.navigationBarHidden = NO;
+
 }
 
 - (void)viewDidLoad
@@ -136,8 +95,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.cart = [[Cart alloc] init];
-    self.cart.items = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning

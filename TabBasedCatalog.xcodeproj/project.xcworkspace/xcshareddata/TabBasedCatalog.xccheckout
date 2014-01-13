@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2C99CCB6-FB18-4A7A-96CC-8A85C6A532BB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TabBasedCatalog</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>46E07329-8446-41CC-90CD-0879BD1AD80F</key>
+		<string>https://github.com/eyebeam79/CatalogMVCTest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TabBasedCatalog.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>46E07329-8446-41CC-90CD-0879BD1AD80F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/eyebeam79/CatalogMVCTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>46E07329-8446-41CC-90CD-0879BD1AD80F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>46E07329-8446-41CC-90CD-0879BD1AD80F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TabBasedCatalogTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>

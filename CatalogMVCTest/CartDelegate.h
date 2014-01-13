@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CartDelegate <NSObject>
+@protocol ProductCellDelegate <NSObject>
 
 // 제품에 카트에 추가
 - (void)addItem:(id)sender;
+
+@end
+
+@protocol CartCellDelegate <NSObject>
 
 // 제품 코드를 이용해서 수량 증가/감소
 - (void)incQuantity:(NSString *)productCode;

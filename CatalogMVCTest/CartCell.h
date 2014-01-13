@@ -1,6 +1,6 @@
 //
 //  CartCell.h
-//  CatalogMVCTest
+//  TabBasedCatalogTest
 //
 //  Created by SDT1 on 2014. 1. 9..
 //  Copyright (c) 2014년 SDT1. All rights reserved.
@@ -14,7 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *quantity;
-@property (weak, nonatomic) id<CartDelegate> delegate;
+@property (weak, nonatomic) id<CartCellDelegate> delegate;
 @property (copy, nonatomic) NSString *productCode;
 
 - (void)setCartItem:(CartItem *)item;

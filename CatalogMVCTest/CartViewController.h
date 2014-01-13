@@ -1,13 +1,13 @@
 //
-//  ViewController.h
+//  CartViewController.h
 //  TabBasedCatalogTest
 //
-//  Created by SDT1 on 2014. 1. 9..
+//  Created by Jinho Son on 2014. 1. 11..
 //  Copyright (c) 2014년 SDT1. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CartViewController : UIViewController
 
 @end

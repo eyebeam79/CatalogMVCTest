@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B32926EF18838F790075F23F /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B32926EE18838F790075F23F /* ProductDetailViewController.m */; };
+		B32926F1188393970075F23F /* Book of record.png in Resources */ = {isa = PBXBuildFile; fileRef = B32926F0188393970075F23F /* Book of record.png */; };
+		B32926F3188393B60075F23F /* Bank account.png in Resources */ = {isa = PBXBuildFile; fileRef = B32926F2188393B60075F23F /* Bank account.png */; };
 		B3433443187E3F3D0017D7B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3433442187E3F3D0017D7B3 /* Foundation.framework */; };
 		B3433445187E3F3D0017D7B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3433444187E3F3D0017D7B3 /* CoreGraphics.framework */; };
 		B3433447187E3F3D0017D7B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3433446187E3F3D0017D7B3 /* UIKit.framework */; };
@@ -35,7 +38,7 @@
 		B3433498187E72D40017D7B3 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3433497187E72D40017D7B3 /* CartCell.m */; };
 		B35CDA2F187FDBA8000EA6F4 /* add-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B35CDA2D187FDBA8000EA6F4 /* add-button.png */; };
 		B35CDA30187FDBA8000EA6F4 /* delete-button.png in Resources */ = {isa = PBXBuildFile; fileRef = B35CDA2E187FDBA8000EA6F4 /* delete-button.png */; };
-		B35CDA33187FDEE7000EA6F4 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B35CDA32187FDEE7000EA6F4 /* ProductDetailViewController.m */; };
+		D2982F1A18805E43004E8886 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2982F1918805E43004E8886 /* CartViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,23 +52,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B343343F187E3F3D0017D7B3 /* CatalogMVCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatalogMVCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32926ED18838F790075F23F /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		B32926EE18838F790075F23F /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		B32926F0188393970075F23F /* Book of record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book of record.png"; sourceTree = "<group>"; };
+		B32926F2188393B60075F23F /* Bank account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bank account.png"; sourceTree = "<group>"; };
+		B343343F187E3F3D0017D7B3 /* TabBasedCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBasedCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3433442187E3F3D0017D7B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B3433444187E3F3D0017D7B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B3433446187E3F3D0017D7B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B343344A187E3F3D0017D7B3 /* CatalogMVCTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatalogMVCTest-Info.plist"; sourceTree = "<group>"; };
+		B343344A187E3F3D0017D7B3 /* TabBasedCatalog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBasedCatalog-Info.plist"; sourceTree = "<group>"; };
 		B343344C187E3F3D0017D7B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B343344E187E3F3D0017D7B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B3433450187E3F3D0017D7B3 /* CatalogMVCTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatalogMVCTest-Prefix.pch"; sourceTree = "<group>"; };
+		B3433450187E3F3D0017D7B3 /* TabBasedCatalog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabBasedCatalog-Prefix.pch"; sourceTree = "<group>"; };
 		B3433451187E3F3D0017D7B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B3433452187E3F3D0017D7B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B3433455187E3F3D0017D7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3433457187E3F3D0017D7B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B3433458187E3F3D0017D7B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B343345A187E3F3D0017D7B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B3433460187E3F3E0017D7B3 /* CatalogMVCTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatalogMVCTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3433460187E3F3E0017D7B3 /* TabBasedCatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBasedCatalogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3433461187E3F3E0017D7B3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B3433469187E3F3E0017D7B3 /* CatalogMVCTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatalogMVCTestTests-Info.plist"; sourceTree = "<group>"; };
+		B3433469187E3F3E0017D7B3 /* TabBasedCatalogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBasedCatalogTests-Info.plist"; sourceTree = "<group>"; };
 		B343346B187E3F3E0017D7B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B343346D187E3F3E0017D7B3 /* CatalogMVCTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatalogMVCTestTests.m; sourceTree = "<group>"; };
 		B3433479187E3F9C0017D7B3 /* Basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Basketball.png; path = Resources/Basketball.png; sourceTree = "<group>"; };
@@ -89,8 +96,8 @@
 		B3433497187E72D40017D7B3 /* CartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartCell.m; sourceTree = "<group>"; };
 		B35CDA2D187FDBA8000EA6F4 /* add-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-button.png"; path = "Resources/add-button.png"; sourceTree = "<group>"; };
 		B35CDA2E187FDBA8000EA6F4 /* delete-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "delete-button.png"; path = "Resources/delete-button.png"; sourceTree = "<group>"; };
-		B35CDA31187FDEE7000EA6F4 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
-		B35CDA32187FDEE7000EA6F4 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		D2982F1818805E43004E8886 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		D2982F1918805E43004E8886 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +127,9 @@
 		B3433436187E3F3D0017D7B3 = {
 			isa = PBXGroup;
 			children = (
-				B3433478187E3F8D0017D7B3 /* Resources */,
-				B3433448187E3F3D0017D7B3 /* CatalogMVCTest */,
-				B3433467187E3F3E0017D7B3 /* CatalogMVCTestTests */,
+				B3433478187E3F8D0017D7B3 /* Images */,
+				B3433448187E3F3D0017D7B3 /* TabBasedCatalogTest */,
+				B3433467187E3F3E0017D7B3 /* TabBasedCatalogTestTests */,
 				B3433441187E3F3D0017D7B3 /* Frameworks */,
 				B3433440187E3F3D0017D7B3 /* Products */,
 			);
@@ -131,8 +138,8 @@
 		B3433440187E3F3D0017D7B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B343343F187E3F3D0017D7B3 /* CatalogMVCTest.app */,
-				B3433460187E3F3E0017D7B3 /* CatalogMVCTestTests.xctest */,
+				B343343F187E3F3D0017D7B3 /* TabBasedCatalog.app */,
+				B3433460187E3F3E0017D7B3 /* TabBasedCatalogTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,22 +155,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B3433448187E3F3D0017D7B3 /* CatalogMVCTest */ = {
+		B3433448187E3F3D0017D7B3 /* TabBasedCatalogTest */ = {
 			isa = PBXGroup;
 			children = (
-				B343348F187E61FC0017D7B3 /* Cart.h */,
-				B3433490187E61FC0017D7B3 /* Cart.m */,
-				B3433492187E63FB0017D7B3 /* CartItem.h */,
-				B3433493187E63FB0017D7B3 /* CartItem.m */,
-				B3433496187E72D30017D7B3 /* CartCell.h */,
-				B3433497187E72D40017D7B3 /* CartCell.m */,
-				B3433485187E40260017D7B3 /* CartDelegate.h */,
-				B343348C187E48880017D7B3 /* Catalog.h */,
-				B343348D187E48880017D7B3 /* Catalog.m */,
-				B3433486187E40260017D7B3 /* Product.h */,
-				B3433487187E40260017D7B3 /* Product.m */,
-				B3433488187E40260017D7B3 /* ProductCell.h */,
-				B3433489187E40260017D7B3 /* ProductCell.m */,
+				D2982F1718805C02004E8886 /* Catalog */,
+				D2982F1618805BF6004E8886 /* Product */,
+				D2982F1518805BE3004E8886 /* Cart */,
 				B3433451187E3F3D0017D7B3 /* AppDelegate.h */,
 				B3433452187E3F3D0017D7B3 /* AppDelegate.m */,
 				B3433454187E3F3D0017D7B3 /* Main.storyboard */,
@@ -171,44 +168,46 @@
 				B3433458187E3F3D0017D7B3 /* ViewController.m */,
 				B343345A187E3F3D0017D7B3 /* Images.xcassets */,
 				B3433449187E3F3D0017D7B3 /* Supporting Files */,
-				B35CDA31187FDEE7000EA6F4 /* ProductDetailViewController.h */,
-				B35CDA32187FDEE7000EA6F4 /* ProductDetailViewController.m */,
 			);
+			name = TabBasedCatalogTest;
 			path = CatalogMVCTest;
 			sourceTree = "<group>";
 		};
 		B3433449187E3F3D0017D7B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B343344A187E3F3D0017D7B3 /* CatalogMVCTest-Info.plist */,
+				B343344A187E3F3D0017D7B3 /* TabBasedCatalog-Info.plist */,
 				B343344B187E3F3D0017D7B3 /* InfoPlist.strings */,
 				B343344E187E3F3D0017D7B3 /* main.m */,
-				B3433450187E3F3D0017D7B3 /* CatalogMVCTest-Prefix.pch */,
+				B3433450187E3F3D0017D7B3 /* TabBasedCatalog-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B3433467187E3F3E0017D7B3 /* CatalogMVCTestTests */ = {
+		B3433467187E3F3E0017D7B3 /* TabBasedCatalogTestTests */ = {
 			isa = PBXGroup;
 			children = (
 				B343346D187E3F3E0017D7B3 /* CatalogMVCTestTests.m */,
 				B3433468187E3F3E0017D7B3 /* Supporting Files */,
 			);
+			name = TabBasedCatalogTestTests;
 			path = CatalogMVCTestTests;
 			sourceTree = "<group>";
 		};
 		B3433468187E3F3E0017D7B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3433469187E3F3E0017D7B3 /* CatalogMVCTestTests-Info.plist */,
+				B3433469187E3F3E0017D7B3 /* TabBasedCatalogTests-Info.plist */,
 				B343346A187E3F3E0017D7B3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B3433478187E3F8D0017D7B3 /* Resources */ = {
+		B3433478187E3F8D0017D7B3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B32926F2188393B60075F23F /* Bank account.png */,
+				B32926F0188393970075F23F /* Book of record.png */,
 				B35CDA2D187FDBA8000EA6F4 /* add-button.png */,
 				B35CDA2E187FDBA8000EA6F4 /* delete-button.png */,
 				B3433479187E3F9C0017D7B3 /* Basketball.png */,
@@ -218,15 +217,53 @@
 				B343347D187E3F9C0017D7B3 /* Wilsonball.jpg */,
 				B343347E187E3F9C0017D7B3 /* cart.png */,
 			);
-			name = Resources;
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D2982F1518805BE3004E8886 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				B343348F187E61FC0017D7B3 /* Cart.h */,
+				B3433490187E61FC0017D7B3 /* Cart.m */,
+				B3433492187E63FB0017D7B3 /* CartItem.h */,
+				B3433493187E63FB0017D7B3 /* CartItem.m */,
+				B3433496187E72D30017D7B3 /* CartCell.h */,
+				B3433497187E72D40017D7B3 /* CartCell.m */,
+				B3433485187E40260017D7B3 /* CartDelegate.h */,
+				D2982F1818805E43004E8886 /* CartViewController.h */,
+				D2982F1918805E43004E8886 /* CartViewController.m */,
+			);
+			name = Cart;
+			sourceTree = "<group>";
+		};
+		D2982F1618805BF6004E8886 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				B32926ED18838F790075F23F /* ProductDetailViewController.h */,
+				B32926EE18838F790075F23F /* ProductDetailViewController.m */,
+				B3433486187E40260017D7B3 /* Product.h */,
+				B3433487187E40260017D7B3 /* Product.m */,
+				B3433488187E40260017D7B3 /* ProductCell.h */,
+				B3433489187E40260017D7B3 /* ProductCell.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		D2982F1718805C02004E8886 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				B343348C187E48880017D7B3 /* Catalog.h */,
+				B343348D187E48880017D7B3 /* Catalog.m */,
+			);
+			name = Catalog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B343343E187E3F3D0017D7B3 /* CatalogMVCTest */ = {
+		B343343E187E3F3D0017D7B3 /* TabBasedCatalog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3433471187E3F3E0017D7B3 /* Build configuration list for PBXNativeTarget "CatalogMVCTest" */;
+			buildConfigurationList = B3433471187E3F3E0017D7B3 /* Build configuration list for PBXNativeTarget "TabBasedCatalog" */;
 			buildPhases = (
 				B343343B187E3F3D0017D7B3 /* Sources */,
 				B343343C187E3F3D0017D7B3 /* Frameworks */,
@@ -236,14 +273,14 @@
 			);
 			dependencies = (
 			);
-			name = CatalogMVCTest;
+			name = TabBasedCatalog;
 			productName = CatalogMVCTest;
-			productReference = B343343F187E3F3D0017D7B3 /* CatalogMVCTest.app */;
+			productReference = B343343F187E3F3D0017D7B3 /* TabBasedCatalog.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B343345F187E3F3E0017D7B3 /* CatalogMVCTestTests */ = {
+		B343345F187E3F3E0017D7B3 /* TabBasedCatalogTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3433474187E3F3E0017D7B3 /* Build configuration list for PBXNativeTarget "CatalogMVCTestTests" */;
+			buildConfigurationList = B3433474187E3F3E0017D7B3 /* Build configuration list for PBXNativeTarget "TabBasedCatalogTests" */;
 			buildPhases = (
 				B343345C187E3F3E0017D7B3 /* Sources */,
 				B343345D187E3F3E0017D7B3 /* Frameworks */,
@@ -254,9 +291,9 @@
 			dependencies = (
 				B3433466187E3F3E0017D7B3 /* PBXTargetDependency */,
 			);
-			name = CatalogMVCTestTests;
+			name = TabBasedCatalogTests;
 			productName = CatalogMVCTestTests;
-			productReference = B3433460187E3F3E0017D7B3 /* CatalogMVCTestTests.xctest */;
+			productReference = B3433460187E3F3E0017D7B3 /* TabBasedCatalogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -273,7 +310,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B343343A187E3F3D0017D7B3 /* Build configuration list for PBXProject "CatalogMVCTest" */;
+			buildConfigurationList = B343343A187E3F3D0017D7B3 /* Build configuration list for PBXProject "TabBasedCatalog" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -286,8 +323,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B343343E187E3F3D0017D7B3 /* CatalogMVCTest */,
-				B343345F187E3F3E0017D7B3 /* CatalogMVCTestTests */,
+				B343343E187E3F3D0017D7B3 /* TabBasedCatalog */,
+				B343345F187E3F3E0017D7B3 /* TabBasedCatalogTests */,
 			);
 		};
 /* End PBXProject section */
@@ -301,10 +338,12 @@
 				B343344D187E3F3D0017D7B3 /* InfoPlist.strings in Resources */,
 				B35CDA30187FDBA8000EA6F4 /* delete-button.png in Resources */,
 				B3433484187E3F9C0017D7B3 /* cart.png in Resources */,
+				B32926F3188393B60075F23F /* Bank account.png in Resources */,
 				B3433482187E3F9C0017D7B3 /* Rugbyball.png in Resources */,
 				B343347F187E3F9C0017D7B3 /* Basketball.png in Resources */,
 				B3433483187E3F9C0017D7B3 /* Wilsonball.jpg in Resources */,
 				B3433456187E3F3D0017D7B3 /* Main.storyboard in Resources */,
+				B32926F1188393970075F23F /* Book of record.png in Resources */,
 				B35CDA2F187FDBA8000EA6F4 /* add-button.png in Resources */,
 				B3433480187E3F9C0017D7B3 /* Football.png in Resources */,
 				B3433481187E3F9C0017D7B3 /* Baseball.png in Resources */,
@@ -327,12 +366,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3433498187E72D40017D7B3 /* CartCell.m in Sources */,
-				B35CDA33187FDEE7000EA6F4 /* ProductDetailViewController.m in Sources */,
 				B3433491187E61FC0017D7B3 /* Cart.m in Sources */,
 				B343348B187E40260017D7B3 /* ProductCell.m in Sources */,
 				B3433459187E3F3D0017D7B3 /* ViewController.m in Sources */,
 				B343348A187E40260017D7B3 /* Product.m in Sources */,
 				B3433453187E3F3D0017D7B3 /* AppDelegate.m in Sources */,
+				B32926EF18838F790075F23F /* ProductDetailViewController.m in Sources */,
+				D2982F1A18805E43004E8886 /* CartViewController.m in Sources */,
 				B343344F187E3F3D0017D7B3 /* main.m in Sources */,
 				B3433494187E63FB0017D7B3 /* CartItem.m in Sources */,
 				B343348E187E48880017D7B3 /* Catalog.m in Sources */,
@@ -352,7 +392,7 @@
 /* Begin PBXTargetDependency section */
 		B3433466187E3F3E0017D7B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B343343E187E3F3D0017D7B3 /* CatalogMVCTest */;
+			target = B343343E187E3F3D0017D7B3 /* TabBasedCatalog */;
 			targetProxy = B3433465187E3F3E0017D7B3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -463,9 +503,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CatalogMVCTest/CatalogMVCTest-Prefix.pch";
-				INFOPLIST_FILE = "CatalogMVCTest/CatalogMVCTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CatalogMVCTest/TabBasedCatalog-Prefix.pch";
+				INFOPLIST_FILE = "CatalogMVCTest/TabBasedCatalog-Info.plist";
+				PRODUCT_NAME = TabBasedCatalog;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -476,9 +516,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CatalogMVCTest/CatalogMVCTest-Prefix.pch";
-				INFOPLIST_FILE = "CatalogMVCTest/CatalogMVCTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CatalogMVCTest/TabBasedCatalog-Prefix.pch";
+				INFOPLIST_FILE = "CatalogMVCTest/TabBasedCatalog-Info.plist";
+				PRODUCT_NAME = TabBasedCatalog;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -499,8 +539,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "CatalogMVCTestTests/CatalogMVCTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "CatalogMVCTestTests/TabBasedCatalogTests-Info.plist";
+				PRODUCT_NAME = TabBasedCatalogTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -518,8 +558,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatalogMVCTest/CatalogMVCTest-Prefix.pch";
-				INFOPLIST_FILE = "CatalogMVCTestTests/CatalogMVCTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "CatalogMVCTestTests/TabBasedCatalogTests-Info.plist";
+				PRODUCT_NAME = TabBasedCatalogTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -528,7 +568,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B343343A187E3F3D0017D7B3 /* Build configuration list for PBXProject "CatalogMVCTest" */ = {
+		B343343A187E3F3D0017D7B3 /* Build configuration list for PBXProject "TabBasedCatalog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B343346F187E3F3E0017D7B3 /* Debug */,
@@ -537,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3433471187E3F3E0017D7B3 /* Build configuration list for PBXNativeTarget "CatalogMVCTest" */ = {
+		B3433471187E3F3E0017D7B3 /* Build configuration list for PBXNativeTarget "TabBasedCatalog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3433472187E3F3E0017D7B3 /* Debug */,
@@ -546,7 +586,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3433474187E3F3E0017D7B3 /* Build configuration list for PBXNativeTarget "CatalogMVCTestTests" */ = {
+		B3433474187E3F3E0017D7B3 /* Build configuration list for PBXNativeTarget "TabBasedCatalogTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B3433475187E3F3E0017D7B3 /* Debug */,

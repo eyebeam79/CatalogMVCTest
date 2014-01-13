@@ -1,6 +1,6 @@
 //
 //  Cart.h
-//  CatalogMVCTest
+//  TabBasedCatalogTest
 //
 //  Created by SDT1 on 2014. 1. 9..
 //  Copyright (c) 2014년 SDT1. All rights reserved.
@@ -12,12 +12,13 @@
 
 @interface Cart : NSObject
 
-@property NSMutableArray *items;
-
-
++ (id)defaultCart;
 
 // 카트에 제품 추가
 - (void)addProduct:(Product *)item;
+- (NSInteger)numberOfItems;
+
+- (CartItem *)cartItemAtIndex:(int)index;
 
 // 카트내 상품 수량 증가/감소
 - (void)incQuantity:(NSString *)productCode;

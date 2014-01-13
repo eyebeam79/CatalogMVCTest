@@ -1,6 +1,6 @@
 //
-//  CatalogMVCTestTests.m
-//  CatalogMVCTestTests
+//  TabBasedCatalogTestTests.m
+//  TabBasedCatalogTestTests
 //
 //  Created by SDT1 on 2014. 1. 9..
 //  Copyright (c) 2014년 SDT1. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface CatalogMVCTestTests : XCTestCase
+@interface TabBasedCatalogTestTests : XCTestCase
 
 @end
 
-@implementation CatalogMVCTestTests
+@implementation TabBasedCatalogTestTests
 
 - (void)setUp
 {
